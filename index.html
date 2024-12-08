@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعلم أساسيات HTML مع أحمد الشيخ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+</head>
+<body>
+    <header>
+        <h1 dir="rtl">تعلم أساسيات HTML مع أحمد الشيخ</h1>
+    </header>
+    <main>
+        <aside>
+            <ul >
+                <li><a href="#" onclick="showTag('h')">h</a></li>
+                <li><a href="#" onclick="showTag('p')">p</a></li>
+                <li><a href="#" onclick="showTag('img')">img</a></li>
+                <li><a href="#" onclick="showTag('ul')">ul</a></li>
+                <li><a href="#" onclick="showTag('ol')">ol</a></li>
+                <li><a href="#" onclick="showTag('table')">table</a></li>
+                <li><a href="#" onclick="showTag('a')">a</a></li>
+                <li><a href="#" onclick="showTag('form')">form</a></li>
+                <li><a href="#" onclick="showTag('input')">input</a></li>
+                <li><a href="#" onclick="showTag('button')">button</a></li>
+            </ul>
+        </aside>
+        <section id="content">
+            <h2 dir="rtl">اختر تاج لعرض التفاصيل</h2>
+        </section>
+        <section id="live-editor" dir="rtl">
+            <h3 dir="rtl">جرب الكود هنا:</h3>
+            <textarea dir="ltr" id="editor" rows="10" cols="50"><h1>مرحبًا بك في موقع الشيخ التعليمي</h1></textarea>
+            <textarea dir="ltr" id="css-code" rows="5" cols="50">color: blue; font-size: 20px;</textarea>
+            <button onclick="runCode()">تشغيل</button>
+            <button onclick="resetPreview()" >إعادة تعيين</button>
+            <div id="preview"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</body>
+</html>
